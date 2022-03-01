@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>RGB Color Game</title>
+    <style>
+      body {
+        background-color: #232323;
+        margin: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .square {
+        width: 30%;
+        border-radius: 10px;
+        padding-bottom: 30%;
+        float: left;
+        background-color: rgb(23, 216, 23);
+        margin: 1.66%;
+      }
+      #container {
+        margin: 0 auto;
+        max-width: 600px;
+      }
+      h1 {
+        padding: 15px 0px;
+        color: white;
+        text-align: center;
+        background: steelblue;
+        margin: 0;
+        text-transform: uppercase;
+      }
+      #colorDisplay{
+        font-size: xxx-large;
+      }
+      #gameBar {
+        height: 30px;
+        background-color: whitesmoke;
+        text-align: center;
+        color: black;
+      }
+      button {
+        border: none;
+        background: none;
+        text-transform: uppercase;
+        height: 100%;
+        color: steelblue;
+        letter-spacing: 2px;
+        font-weight: 700;
+        font-size: inherit;
+      }
+      #message{
+        display: inline-block;
+        width: 20%;
+      }
+      button:hover{
+        color: white;
+        background: steelblue;
+      }
+      .selected{
+        color: white;
+        background: steelblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The Great <br> <span id="colorDisplay">RGB</span> <br> Color Game</h1>
+    <div id="gameBar">
+      <button id="reset">Play Again</button><span id="message"></span>
+      <button id="easyBtn">Easy</button>
+      <button id="hardBtn">Hard</button>
+    </div>
+    <div id="container">
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
